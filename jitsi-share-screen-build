@@ -1,0 +1,5 @@
+#!/bin/bash
+cd jitsi-share-screen
+
+docker build -t jitsi-share-screen .
+docker run --privileged=true  -v `pwd`/../output:/output jitsi-share-screen
